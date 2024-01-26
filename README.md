@@ -4,7 +4,8 @@ This is an Extension for [ComfyUI](https://github.com/comfyanonymous/ComfyUI), w
 ## But Why
 If you also install a bunch of Extensions that add buttons to the menu like me, 
 half of the buttons are basically out of the screen on launch. 
-Thus this solves that... *"problem."*
+This solves that... *"problem."*
 
 ## Configs
-You can edit the `configs.js` file to set which corner to start with
+1. You can edit the `configs.js` file to set which of the 4 corners to stick to
+2. You can edit the `configs.js` file to make the menu always stick to the corner
