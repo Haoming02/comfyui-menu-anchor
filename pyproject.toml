@@ -1,14 +1,13 @@
 [project]
 name = "comfyui-menu-anchor"
-description = "This is an Extension for ComfyUI, which moves the menu to the specified corner on startup."
+description = "Automatically snaps the menu to corner"
 version = "1.0.0"
-license = "LICENSE"
+license = "MIT"
 
 [project.urls]
 Repository = "https://github.com/Haoming02/comfyui-menu-anchor"
-#  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
-DisplayName = "comfyui-menu-anchor"
+PublisherId = "haoming02"
+DisplayName = "Menu Anchor"
 Icon = ""
