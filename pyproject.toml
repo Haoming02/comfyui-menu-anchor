@@ -1,8 +1,9 @@
 [project]
 name = "comfyui-menu-anchor"
-description = "Automatically snaps the menu to corner"
-version = "1.0.0"
+description = "Snaps the menu to the corner automatically"
+version = "1.0.1"
 license = { text = "MIT License" }
+dependencies = []
 
 [project.urls]
 Repository = "https://github.com/Haoming02/comfyui-menu-anchor"
