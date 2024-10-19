@@ -1,12 +1,5 @@
 ﻿# ComfyUI Menu Anchor
-This is an Extension for [ComfyUI](https://github.com/comfyanonymous/ComfyUI), which moves the menu to the specified corner on startup.
+This is an Extension for [ComfyUI](https://github.com/comfyanonymous/ComfyUI), which moves the menu to the specified location.
 
-## But Why
-If you also install a bunch of Extensions that add buttons to the menu like me, half of the buttons are basically out of the screen on launch.
-
-This helps solving that... *"problem."*
-
-## Configs
-You can click the cog icon to open the settings, and use the **Menu Anchor Mode** to select which corner to snap to, as well as enabling **Menu Anchor Always** to make it always stick to the corner.
-
-> Requires refresh (`F5`) to take effect
+## How to Use
+Click the cog icon to open the **Settings**. In the **Anchor** section, you can set the desired location for the `Vertical` and `Horizontal` direction separately, with 9 combinations possible in total. The menu will be fixed at the specified location. Works for both **new** and **legacy** UI.
