@@ -71,6 +71,23 @@ function move2corner(menu) {
 	menu.style.transform = `translate(${x}%, ${y}%)`;
 }
 
+function newFrontEnd(attempt) {
+	const panel = document.querySelector("div.p-panel.p-component.actionbar");
+	if (panel == null || panel.querySelector(".comfyui-queue-button") == null) {
+		if (attempt < 10) setTimeout(() => newFrontEnd(attempt + 1), 100);
+		return;
+	}
+
+	panel.classList.add("fixed", "shadow-interface");
+	panel.classList.remove("p-0", "static", "mr-2", "border-none", "bg-transparent");
+
+	window.addEventListener("resize", () => {
+		setTimeout(() => move2corner(panel), 50);
+	});
+
+	move2corner(panel);
+}
+
 function init() {
 	[".comfy-menu", ".actionbar"].forEach((cls) => {
 		const menu = document.querySelector(cls);
@@ -79,12 +96,14 @@ function init() {
 		menu.classList.add("comfy-menu-manual-pos");
 		menu.classList.remove("is-docked");
 
-		document.addEventListener("mouseup", () => {
+		window.addEventListener("resize", () => {
 			setTimeout(() => move2corner(menu), 50);
 		});
 
-		setTimeout(() => move2corner(menu), 100);
+		setTimeout(() => move2corner(menu), 50);
 	});
+
+	newFrontEnd(0);
 }
 
 app.registerExtension({
